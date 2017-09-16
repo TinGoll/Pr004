@@ -1,0 +1,184 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	font: {
+		file: font.fnt
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	RGBA_0_129_255_255: {
+		r: 0
+		g: 0.5097225
+		b: 1
+		a: 1
+	}
+	RGBA_119_0_255_255: {
+		r: 0.46755648
+		g: 0
+		b: 1
+		a: 1
+	}
+	RGBA_251_247_233_255: {
+		r: 0.98666674
+		g: 0.9705917
+		b: 0.9143112
+		a: 1
+	}
+	RGBA_255_101_0_255: {
+		r: 1
+		g: 0.39888895
+		b: 0
+		a: 1
+	}
+	RGBA_255_233_0_255: {
+		r: 1
+		g: 0.91744447
+		b: 0
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: button_04
+		down: button_02
+		over: button_04
+		checked: button_04
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: {
+		checkboxOn: checkbox_on
+		checkboxOff: checkbox_off
+		checkboxOver: checkbox_off
+		checkboxOnDisabled: checkbox_on
+		checkboxOffDisabled: checkbox_off
+		font: font
+		fontColor: RGBA_0_129_255_255
+		downFontColor: RGBA_119_0_255_255
+		overFontColor: RGBA_0_129_255_255
+		checkedFontColor: RGBA_0_129_255_255
+		checkedOverFontColor: RGBA_0_129_255_255
+		disabledFontColor: RGBA_119_0_255_255
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: {
+		imageUp: button_04
+		imageDown: button_02
+		imageOver: button_04
+		imageChecked: button_04
+		imageCheckedOver: button_04
+		imageDisabled: button_04
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
+	default: {
+		imageUp: button_04
+		imageDown: button_02
+		imageOver: button_04
+		imageChecked: button_04
+		imageCheckedOver: button_04
+		imageDisabled: button_02
+		font: font
+		fontColor: RGBA_0_129_255_255
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: font
+		fontColor: RGBA_0_129_255_255
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
+	default: {
+		font: font
+		fontColorSelected: RGBA_0_129_255_255
+		fontColorUnselected: RGBA_119_0_255_255
+		selection: textbox_02
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle: {
+	default-horizontal: {
+		background: textbox_02
+		disabledBackground: button_01
+		knob: knob_01
+		disabledKnob: knob_03
+		knobBefore: knob_04
+		knobAfter: scroll_back_hor
+		disabledKnobBefore: selectbox_01
+		disabledKnobAfter: radiobox_on
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: {
+		background: textbox_02
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+	default: {
+		font: font
+		fontColor: RGBA_0_129_255_255
+		disabledFontColor: RGBA_119_0_255_255
+		scrollStyle: default
+		listStyle: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: {
+		knobOver: knob_03
+		knobDown: knob_03
+		background: textbox_01
+		knob: knob_03
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle: {
+	default-horizontal: {
+		handle: textbox_cursor_02
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: {
+		font: font
+		fontColor: RGBA_251_247_233_255
+		downFontColor: RGBA_255_233_0_255
+		overFontColor: RGBA_251_247_233_255
+		checkedFontColor: RGBA_251_247_233_255
+		checkedOverFontColor: RGBA_251_247_233_255
+		disabledFontColor: RGBA_255_101_0_255
+		up: button_03
+		down: button_01
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: {
+		font: font
+		fontColor: RGBA_255_233_0_255
+		background: textbox_02
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+		background: textbox_02
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle: {
+	default: {
+		background: radiobox_off
+		knob: radiobox_on
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Tree$TreeStyle: {
+	default: {
+		plus: scroll_back_hor
+		minus: scroll_back_ver
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: textbox_02
+		titleFont: font
+		titleFontColor: RGBA_255_233_0_255
+		stageBackground: window_03
+	}
+}
+}

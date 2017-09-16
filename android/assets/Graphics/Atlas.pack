@@ -1,0 +1,159 @@
+
+Atlas.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bunny_running_64x64
+  rotate: false
+  xy: 1, 53
+  size: 320, 64
+  orig: 320, 64
+  offset: 0, 0
+  index: -1
+bunny_standing_64x64
+  rotate: false
+  xy: 323, 53
+  size: 320, 64
+  orig: 320, 64
+  offset: 0, 0
+  index: -1
+cherry
+  rotate: false
+  xy: 1, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+chocolate
+  rotate: false
+  xy: 645, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+corn
+  rotate: false
+  xy: 53, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+eggplant
+  rotate: false
+  xy: 697, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+greenapple
+  rotate: false
+  xy: 105, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+kiwi
+  rotate: false
+  xy: 749, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+lemon
+  rotate: false
+  xy: 157, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+lime
+  rotate: false
+  xy: 801, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+lollipop
+  rotate: false
+  xy: 209, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+mushroom
+  rotate: false
+  xy: 853, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+nothing
+  rotate: false
+  xy: 261, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+orange
+  rotate: false
+  xy: 905, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+pear
+  rotate: false
+  xy: 313, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+pie
+  rotate: false
+  xy: 957, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+pizza
+  rotate: false
+  xy: 365, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+raspberries
+  rotate: false
+  xy: 417, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+redapple
+  rotate: false
+  xy: 469, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+strawberry
+  rotate: false
+  xy: 521, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+waffles
+  rotate: false
+  xy: 573, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+watermelon
+  rotate: false
+  xy: 625, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1

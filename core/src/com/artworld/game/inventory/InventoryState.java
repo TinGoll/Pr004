@@ -16,9 +16,11 @@ import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop;
  * Created by Roma on 29.08.2017.
  */
 public class InventoryState {
+
     private InventoryActor inventoryActor;
     private Inventory inventory;
     public static Stage stage;
+
     public InventoryState(Skin skin) {
         stage = new Stage();
         Gdx.input.setInputProcessor(stage);

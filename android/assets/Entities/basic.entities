@@ -1,0 +1,16 @@
+[
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 100
+	y: 100
+	data: {
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 300.0
+	}
+	inventory: {}
+}
+]

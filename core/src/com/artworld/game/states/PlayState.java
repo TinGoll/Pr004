@@ -28,8 +28,8 @@ import static com.artworld.game.utils.Constants.PPM;
 public class PlayState extends BaseState {
     private TiledMap map;
     private MapProperties props;
-
     private OrthogonalTiledMapRenderer renderer;
+
     private Viewport viewport;
 
     private int[] backgroundLayers;
@@ -54,7 +54,6 @@ public class PlayState extends BaseState {
         camera.position.set(viewport.getWorldWidth() / 2, viewport.getWorldHeight() / 2, 0);
         createTiledMap();
         createWorld();
-
         inventoryState = new com.artworld.game.inventory.InventoryState(skin);
 
     }
@@ -116,6 +115,7 @@ public class PlayState extends BaseState {
     @Override
     public void render() {
         Gdx.gl.glClearColor(0f, 0f, 0f, 1);
+        Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         worldRender();
         inventoryState.render();
@@ -151,7 +151,6 @@ public class PlayState extends BaseState {
     @Override
     public void resize(int w, int h) {
         viewport.update(w, h);
-        System.out.println(w + " " + h);
         inventoryState.resize(w,h);
     }
     public World getWorld() {

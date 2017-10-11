@@ -1,6 +1,6 @@
 package com.artworld.game.entities.Characters;
 
-import com.artworld.game.entities.Entity;
+import com.artworld.game.entities.Entity1;
 import com.artworld.game.states.PlayState;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -13,7 +13,7 @@ import com.badlogic.gdx.utils.Array;
  * Created by Roma on 10.07.2017.
  */
 
-public abstract class Char extends Entity {
+public abstract class Char extends Entity1 {
     public enum State {WALKING, FALLING, JUMPING, STANDING, ATTACK, GROWING, DEAD}
 
     public State currentState;

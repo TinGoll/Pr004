@@ -2,6 +2,7 @@ package com.artworld.game.managers;
 
 import com.artworld.game.Application;
 import com.artworld.game.states.BaseState;
+import com.artworld.game.states.ContiniumState;
 import com.artworld.game.states.LoadingState;
 import com.artworld.game.states.MenuState;
 import com.artworld.game.states.PlayState;
@@ -18,7 +19,7 @@ public class GameStateManager {
     public enum State {
         SPLASH,
         PLAY,
-        INVENTORY,
+        CONTINIUM,
         LOADING,
         MENU
     }
@@ -59,7 +60,7 @@ public class GameStateManager {
             case SPLASH: return null;
             case PLAY: return new PlayState(this);
             case LOADING: return new LoadingState(this);
-            case INVENTORY: return null;
+            case CONTINIUM: return new ContiniumState(this);
             case MENU: return new MenuState(this);
         }
         return null;

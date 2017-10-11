@@ -34,6 +34,7 @@ public class MenuState extends BaseState {
         Gdx.input.setInputProcessor(stage);
         stage.clear();
         initButtons();
+       // Gdx.app.error("Загрузчик существ", "Не удалось загрузить существо: ");
     }
 
     private void initButtons() {
@@ -56,7 +57,7 @@ public class MenuState extends BaseState {
         buttonLoad.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-
+                gsm.setState(GameStateManager.State.CONTINIUM);
             }
         });
 

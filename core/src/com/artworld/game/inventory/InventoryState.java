@@ -28,7 +28,7 @@ public class InventoryState {
         inventory = new Inventory();
         inventoryActor = new InventoryActor(inventory, dragAndDrop, skin);
         stage.addActor(inventoryActor);
-        inventoryActor.setVisible(true);
+        inventoryActor.setVisible(false);
     }
     public void update(float delta) {
         stage.act();

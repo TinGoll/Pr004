@@ -42,6 +42,8 @@ public class Bunny extends Char {
         previousState = State.STANDING;
         initAnimation();
         setBounds(0, 0, 64 / PPM, 64 / PPM);
+        setPosition(x / PPM, y/ PPM);
+
         setNAME("Кролик");
 
     }

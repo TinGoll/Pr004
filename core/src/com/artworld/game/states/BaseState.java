@@ -41,4 +41,15 @@ public abstract class BaseState {
     public abstract void pause();
     public abstract void resume();
     public abstract void resize(int w, int h);
+
+    public OrthographicCamera getCamera() {
+        return camera;
+    }
+    public SpriteBatch getBatch() {
+        return batch;
+    }
+
+    public Skin getSkin() {
+        return skin;
+    }
 }

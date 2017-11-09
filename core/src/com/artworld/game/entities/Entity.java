@@ -1,8 +1,13 @@
 package com.artworld.game.entities;
 
+
 import com.artworld.game.entities.actions.Actions;
 import com.artworld.game.managers.CharManager;
 import com.artworld.game.world.GameMap;
+import com.artworld.game.world.SpawnArea;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -19,13 +24,20 @@ import static com.artworld.game.utils.Constants.*;
 
 public abstract class Entity {
 
+    public enum EntityType{
+        PLAYER, ENEMY, NPC, NEUTRAL;
+    }
+
+    protected SpawnArea area = null;
+
     protected World world;
     protected Body body;
     protected Creature creature;
     protected float stateTimer;
-    protected boolean runningRight;
+    protected boolean runningRight = true;
     protected boolean Dead, regenHp = false, regenMp = false;
     protected GameMap map;
+    protected Sprite sprite;
 
     private boolean Player = false;
     protected Vector2 velocity, position;
@@ -34,7 +46,7 @@ public abstract class Entity {
     public Fixture SensorFixture;
 
     protected CharManager state;
-
+    protected EntityType type;
 
     //region Характеристики по умолчанию.
     protected float hp = 100,
@@ -46,14 +58,19 @@ public abstract class Entity {
             speed = 40;
     //endregion
     public void create (EntitySnapshot snapshot, Creature creature, GameMap map){
+        this.world = map.getWorld();
         if(this.creature == null) {
             this.map = map;
             this.position = new Vector2(snapshot.getX(), snapshot.getY());
             this.creature = creature;
+            sprite = new Sprite();
+            sprite.setBounds(0, 0, creature.getWidth() / PPM, creature.getHeight() / PPM);
+            sprite.setPosition(position.x/PPM , position.y / PPM);
+            currentState = Actions.STANDING;
+            previousState= Actions.STANDING;
             defineState();
             state = new CharManager(this, hp, mp, dmg, arm);
             defineEntity();
-            initAnimation();
         }
     }
     public void create (float x, float y, Creature creature, GameMap map){
@@ -64,9 +81,22 @@ public abstract class Entity {
         create (x, y, Creature.getRandomCreature(), map);
     }
     public void update (float delta){
-
-       // state.regenHp(isRegenHp(), delta);
-        //state.regenMp(isRegenMp(), delta);
+        updateAnimation(delta);
+        state.regenHp(isRegenHp(), delta);
+        state.regenMp(isRegenMp(), delta);
+    }
+    private void updateAnimation(float delta) {
+        sprite.setPosition(body.getPosition().x - sprite.getWidth() / 2, body.getPosition().y - sprite.getHeight()/2 + 16 / PPM );
+        sprite.setRegion(getFrame(delta));
+    }
+    protected  TextureRegion getFrame(float delta){
+        TextureRegion region;
+        currentState = getState();
+        region = ((TextureRegion) getAnimation(creature, currentState).getKeyFrame(stateTimer, currentState.isLooping()));
+        DirectionOfMovement(region);
+        stateTimer = currentState == previousState ? stateTimer + delta : 0;
+        previousState = currentState;
+        return region;
     }
     // region Управление временно.
     public void jump() {
@@ -116,16 +146,15 @@ public abstract class Entity {
     public void die() {
         if (!isDead()) {
             Dead = true;
-            System.out.println("Персонаж " + " погиб.");
+            System.out.println("Персонаж " + creature.getTitle() + " погиб.");
         }
     }
     public boolean isRunningRight() {
         return runningRight;
     }
     public EntitySnapshot getSaveSnapshot(){
-        return new EntitySnapshot(creature.getId(), position.x, position.y);
+        return new EntitySnapshot(creature.getId(), body.getPosition().x * PPM, body.getPosition().y * PPM);
     }
-
     public float getX () {
         return position.x;
     }
@@ -170,6 +199,10 @@ public abstract class Entity {
         return exp;
     }
 
+    public Body getBody() {
+        return body;
+    }
+
     public boolean isRegenHp() {
         return regenHp;
     }
@@ -189,6 +222,12 @@ public abstract class Entity {
     public void setExp(float exp) {
         this.exp = exp;
     }
+    public EntityType getType() {
+        return type;
+    }
+    public void setType(EntityType type) {
+        this.type = type;
+    }
 
     public  void lvlUp(){
     }
@@ -201,8 +240,14 @@ public abstract class Entity {
     }
     public void takeExp(float exp){
     }
+    public Animation getAnimation(Creature creature, Actions actions){
+        return map.getAnimationManager().getAnimation(creature, actions);
+    }
     protected abstract void defineEntity();
     protected abstract void defineState();
-    protected abstract void initAnimation();
-    public abstract void render(SpriteBatch batch);
+    public abstract void render(SpriteBatch batch, OrthographicCamera camera);
+    public void setArea(SpawnArea area) {
+        this.area = area;
+    }
+    public abstract GameMap getMap();
 }

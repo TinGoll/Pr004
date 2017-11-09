@@ -2,14 +2,495 @@
 {
 	class: com.artworld.game.entities.EntitySnapshot
 	id: 1
-	x: 100
-	y: 100
+	x: 451.96365
+	y: 172.92609
 	data: {
+		Player: "true"
 		Lvl: 1.0
 		Armor: 1.17
 		Manna: 50.0
 		Demage: 5.9500003
-		Heals: 300.0
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 288
+	y: 259.47314
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 428.48502
+	y: 172.49977
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 563.5399
+	y: 44.499992
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 1952
+	y: 99.50424
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 1568
+	y: 131.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 2432
+	y: 163.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 3391.9998
+	y: 99.50424
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 4416
+	y: 195.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 4704
+	y: 163.47314
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 5088
+	y: 131.50424
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 5824
+	y: 99.50424
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 6464
+	y: 163.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7232
+	y: 195.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 6751.9995
+	y: 99.47075
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7551.9995
+	y: 163.4357
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7040
+	y: 172.38237
+	data: {
+		Player: "false"
+		Lvl: 1.0
+		Armor: 1.17
+		Manna: 50.0
+		Demage: 5.9500003
+		Heals: 314.46234
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 288
+	y: 236.25734
+	data: {
+		Player: "false"
+		Lvl: 3.633331
+		Armor: 1.7690567
+		Manna: 50.0
+		Demage: 9.407131
+		Heals: 322.56314
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 427.71396
+	y: 196.36238
+	data: {
+		Player: "false"
+		Lvl: 2.4998865
+		Armor: 1.4806652
+		Manna: 50.0
+		Demage: 7.723762
+		Heals: 318.10947
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 907.86
+	y: 140.50111
+	data: {
+		Player: "false"
+		Lvl: 3.328302
+		Armor: 1.686332
+		Manna: 50.0
+		Demage: 8.920993
+		Heals: 321.18372
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 1952
+	y: 76.27203
+	data: {
+		Player: "false"
+		Lvl: 3.3685927
+		Armor: 1.6970332
+		Manna: 50.0
+		Demage: 8.983737
+		Heals: 321.35748
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 1568
+	y: 108.24011
+	data: {
+		Player: "false"
+		Lvl: 3.7615662
+		Armor: 1.8050348
+		Manna: 50.0
+		Demage: 9.619333
+		Heals: 323.188
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 2432
+	y: 140.24011
+	data: {
+		Player: "false"
+		Lvl: 3.8509715
+		Armor: 1.8305507
+		Manna: 50.0
+		Demage: 9.770106
+		Heals: 323.64026
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 3391.9998
+	y: 76.27203
+	data: {
+		Player: "false"
+		Lvl: 2.3716521
+		Armor: 1.4511527
+		Manna: 50.0
+		Demage: 7.553377
+		Heals: 317.71075
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 4416
+	y: 172.24011
+	data: {
+		Player: "false"
+		Lvl: 2.920255
+		Armor: 1.5816852
+		Manna: 50.0
+		Demage: 8.309721
+		Heals: 319.55554
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 4704
+	y: 140.25734
+	data: {
+		Player: "false"
+		Lvl: 3.15416
+		Armor: 1.6408507
+		Manna: 50.0
+		Demage: 8.654805
+		Heals: 320.46008
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 5088
+	y: 108.272026
+	data: {
+		Player: "false"
+		Lvl: 3.2140827
+		Armor: 1.6563609
+		Manna: 50.0
+		Demage: 8.745492
+		Heals: 320.70407
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 5824
+	y: 76.27203
+	data: {
+		Player: "false"
+		Lvl: 3.178227
+		Armor: 1.6470625
+		Manna: 50.0
+		Demage: 8.691114
+		Heals: 320.55728
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 6464
+	y: 140.24011
+	data: {
+		Player: "false"
+		Lvl: 3.5404806
+		Armor: 1.7434547
+		Manna: 50.0
+		Demage: 9.256411
+		Heals: 322.12753
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7232
+	y: 172.24011
+	data: {
+		Player: "false"
+		Lvl: 3.4516754
+		Armor: 1.7193148
+		Manna: 50.0
+		Demage: 9.114517
+		Heals: 321.72406
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 6751.9995
+	y: 76.25623
+	data: {
+		Player: "false"
+		Lvl: 2.10705
+		Armor: 1.3921018
+		Manna: 50.0
+		Demage: 7.213587
+		Heals: 316.94507
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7551.9995
+	y: 140.24011
+	data: {
+		Player: "false"
+		Lvl: 2.027058
+		Armor: 1.3747276
+		Manna: 50.0
+		Demage: 7.113906
+		Heals: 316.72806
+	}
+	inventory: {}
+}
+{
+	class: com.artworld.game.entities.EntitySnapshot
+	id: 1
+	x: 7040
+	y: 195.68106
+	data: {
+		Player: "false"
+		Lvl: 2.0842266
+		Armor: 1.3871223
+		Manna: 50.0
+		Demage: 7.185004
+		Heals: 316.8824
 	}
 	inventory: {}
 }

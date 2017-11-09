@@ -3,10 +3,19 @@ package com.artworld.game.entities.Characters;
 import com.artworld.game.entities.Creature;
 import com.artworld.game.entities.Entity;
 import com.artworld.game.entities.EntitySnapshot;
+import com.artworld.game.entities.actions.Actions;
+import com.artworld.game.entities.entytiInfo.EntytiTitle;
 import com.artworld.game.world.GameMap;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.CircleShape;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
+import com.badlogic.gdx.physics.box2d.PolygonShape;
 
+import static com.artworld.game.utils.Constants.PPM;
 
 
 /**
@@ -15,27 +24,33 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Bunny1 extends Entity {
 
-    protected Animation standing;
-    protected Animation walking;
-    protected Animation jumping;
-    protected Animation falling;
-    protected Animation attack;
-    protected Animation dead;
 
-    protected float timer = 0;
+    private float timer = 0;
+    private EntytiTitle title;
 
     @Override
     public void create(EntitySnapshot snapshot, Creature creature, GameMap map) {
         super.create(snapshot, creature, map);
         //spawnRadius = snapshot.getFloat("Жизнь", hp);
+        setType(EntityType.PLAYER);
+        setPlayer(snapshot.getBoolean("Player", isPlayer()));
+        title = new EntytiTitle(this);
 
-        System.out.println(state.getMaxHp());
+
     }
 
     @Override
-    public void render(SpriteBatch batch) {
+    public void render(SpriteBatch batch, OrthographicCamera camera) {
+        sprite.draw(batch);
+        title.render(batch);
 
     }
+
+    @Override
+    public GameMap getMap() {
+        return map;
+    }
+
     @Override
     public void update(float delta) {
         super.update(delta);
@@ -43,6 +58,43 @@ public class Bunny1 extends Entity {
 
     @Override
     protected void defineEntity() {
+        BodyDef bdef = new BodyDef();
+        bdef.position.set(sprite.getX(), sprite.getY());
+        bdef.type = BodyDef.BodyType.DynamicBody;
+        body = world.createBody(bdef);
+
+        FixtureDef fdef = new FixtureDef();
+        CircleShape shape = new CircleShape();
+        shape.setRadius(12 / PPM);
+
+        fdef.shape = shape;
+        body.createFixture(fdef).setUserData(this);
+    /*
+        PolygonShape poly = new PolygonShape();
+        poly.setAsBox(6 / PPM, 18 / PPM);
+        playerSensorFixture  = body.createFixture(poly,0);
+        playerSensorFixture.setUserData(this);
+        poly.dispose();
+        */
+
+       /* PolygonShape sensor = new PolygonShape();
+        sensor.setAsBox(13 / PPM, 18 / PPM);
+        fdef.shape = sensor;
+        fdef.isSensor = true;
+        playerSensorFixture = body.createFixture(fdef);
+        playerSensorFixture.setUserData(this);
+        */
+        PolygonShape sensor = new PolygonShape();
+        Vector2[] vertice = new Vector2[4];
+        vertice[0] = new Vector2(-13, 25).scl(1 / PPM);
+        vertice[1] = new Vector2(13, 25).scl(1 / PPM);
+        vertice[2] = new Vector2(-13, -14).scl(1 / PPM);
+        vertice[3] = new Vector2(13, -14).scl(1 / PPM);
+        sensor.set(vertice);
+        fdef.shape = sensor;
+        fdef.isSensor = true;
+        SensorFixture = body.createFixture(fdef);
+        SensorFixture.setUserData(this);
 
     }
 
@@ -59,10 +111,6 @@ public class Bunny1 extends Entity {
         regenMp = true;
     }
 
-    @Override
-    protected void initAnimation() {
-
-    }
 
     @Override
     public EntitySnapshot getSaveSnapshot() {
@@ -72,6 +120,8 @@ public class Bunny1 extends Entity {
         snapshot.putFloat("Demage", state.getDmg());
         snapshot.putFloat("Armor", state.getArm());
         snapshot.putFloat("Lvl", lvl);
+        snapshot.putBoolean("Player", isPlayer());
+
         return snapshot;
     }
 

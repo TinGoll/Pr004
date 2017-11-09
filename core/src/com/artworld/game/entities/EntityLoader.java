@@ -16,15 +16,17 @@ public class EntityLoader {
     private static Json json = new Json();
 
     public static ArrayList<Entity> loadEntities (String id, GameMap map,  ArrayList<Entity> currentEntities) {
-        Gdx.files.local("Entities/").file().mkdirs();
+        Gdx.files.local("Entities/").file().mkdirs(); // Создаем папку
         FileHandle file = Gdx.files.local("Entities/" + id + ".entities");
 
         if (file.exists()) {
             EntitySnapshot[] snapshots = json.fromJson(EntitySnapshot[].class, file.readString());
+
             ArrayList<Entity> entities = new ArrayList<Entity>();
-            for (EntitySnapshot snapshot : snapshots) {
-                entities.add(Creature.createEntityUsingSnapshot(snapshot, map));
-            }
+
+                for (EntitySnapshot snapshot : snapshots) {
+                    entities.add(Creature.createEntityUsingSnapshot(snapshot, map));
+                }
             return entities;
         } else {
             saveEntities(id, currentEntities);

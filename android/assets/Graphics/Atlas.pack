@@ -10,6 +10,20 @@ bunny_running_64x64
   orig: 320, 64
   offset: 0, 0
   index: -1
+bunny_WALKING
+  rotate: false
+  xy: 1, 53
+  size: 320, 64
+  orig: 320, 64
+  offset: 0, 0
+  index: -1
+bunny_STANDING
+  rotate: false
+  xy: 323, 53
+  size: 320, 64
+  orig: 320, 64
+  offset: 0, 0
+  index: -1
 bunny_standing_64x64
   rotate: false
   xy: 323, 53

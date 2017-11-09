@@ -5,8 +5,12 @@ import com.artworld.game.world.GameMap;
 import com.artworld.game.world.TileType;
 import com.artworld.game.world.TiledGameMap;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.FitViewport;
@@ -24,7 +28,6 @@ public class ContiniumState extends BaseState {
     private TextureAtlas atlas;
     private GameMap gameMap;
 
-
     public ContiniumState(GameStateManager gsm) {
         super(gsm);
 
@@ -33,6 +36,7 @@ public class ContiniumState extends BaseState {
         viewport.update((int)w,(int) h);
         camera.position.set(viewport.getWorldWidth() / 2, viewport.getWorldHeight() / 2, 0);
         gameMap = new TiledGameMap(this);
+
     }
 
     @Override
@@ -57,19 +61,21 @@ public class ContiniumState extends BaseState {
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
         camera.update();
         gameMap.render(camera, batch);
     }
 
     @Override
     public void dispose() {
+
         gameMap.dispose();
         atlas.dispose();
     }
 
     @Override
     public void pause() {
-
+        gameMap.Save();
     }
 
     @Override
@@ -81,4 +87,13 @@ public class ContiniumState extends BaseState {
     public void resize(int w, int h) {
         viewport.update(w, h);
     }
+
+    public TextureAtlas getAtlas() {
+        return atlas;
+    }
+
+    public Viewport getViewport() {
+        return viewport;
+    }
+
 }

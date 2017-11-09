@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="15" tilewidth="32" tileheight="32" nextobjectid="42">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="15" tilewidth="32" tileheight="32" nextobjectid="89">
  <tileset firstgid="1" name="tileset1" tilewidth="32" tileheight="32" tilecount="170" columns="17">
   <image source="../Graphics/tileset1.png" width="544" height="320"/>
  </tileset>
@@ -10,12 +10,12 @@
  </layer>
  <layer name="Ground" width="240" height="15">
   <data encoding="base64" compression="zlib">
-   eJztmEFKw0AUQH+7sSvrUkXdty7swoUaBaFL7QUK4gUEXYpHcOcRxIs6gz/4nc5MTBhbgu/BI0k7TaeQ10krAgAAAAAAAAAAAAAAfeWokACWUcJB4nHoxkEhASy3CacJ9zczzd5T93eodtmnXwipnAvnXaAExzey2vBAt8MC89gS1niAtkyD47PMWNtwm/XZNzmUfJ8T5556/Mu5A/x3wn6byDW8iIz3XVaBYeO7+vqx6vdzDdu1+q9/n08k/Xn5noFNcyHf1+Gr86XguW2722oVGXcuq/1WEu9jZMbHvCo496Z7jbDl+zUIYHmQr4ZT+usytdbl1rv6+vfNPku6X9viTK07DhuONeXPOddtm97aeG3mbw3H7QQ+9VD+n+wXvt933Z7qvm/HNnypNl3nlrot79L55vxQLXbtncnPhnPvVZ97LvG2bNN2XY+NtZ50eH6c8LGHlrp/gfXwCeaLZNw=
+   eJztlz9PAjEYh19YZBJHNeoODjI4KKeJCaOyOJoYF0fjORonZje+gcYvapu08eWlf66XHlrze5IndwflKOEeehABAAAAAAAAAAAAAAAAAKBUjjIJAGfgsed5HLTjIJMAcG48jj3u/840i8f2d2hss49+gaRSzpX3QhLH17TecM9s+xnmsUVY4wFIZSyOzwJjecMp67Nusk/hPkfKPeNxw7mD7riNCNrxkmgM2W+MUMNzx3jdZSWUje+a1w+Nej/UMF+ru/5/PiL/5/3PvzOxfptYKouGpmB7rJVPDa0p3veUfq7Dd+Vb4rxC8Ha3jZVj3Dmt91uRu48BG+/yMuPcY/casuWHDdg1Obq1PjLvWrpJFi11ITuT3T5HbNq4dhpQX5e+tS603tnrXzf7Sv5+eYsTo+1YNuxqSp9zZrYpvaV4xebPleN2hKn3Sn/B3P1+0GrHrp5jnS8K1NdarNtU9Tk/zfbU7Ot2eMMXxth1zrFtafV3sFR+GTl87Z3QasOh97LnnpG7Ld40X9ddY7knLZ4feqwLtKv1V7qMPF96v7k79fkNJeL8CQ==
   </data>
  </layer>
  <layer name="Front" width="240" height="15">
   <data encoding="base64" compression="zlib">
-   eJzt18EJwjAYBtDce/JQB/CgE9SbUziOGzi1LbYIgZQqiYnyHnwkBAKh8PHTEAAAgK12iQDtOyQCtG8Yc44yVH0RsNXU1T48e7us+gu/IZ6/x/lsnwgAUEdqNpvP67pMe+D79JeWmb/r9JeS7mNu8/76wf0W+nvKmJymb9OF139G3M13zqGEFvoLlHWp/QD4Ew+TVgwj
+   eJzt18EJwjAYBtDce/KgA3jQCaonp3AcN3BqW1oRoglVUhr1PfhICBRC4eNvQwAAAKZaJQLUb5sIUL+2yyFKu+iNgKn6rq7D0Nv7qr98i/ZF/kk8f3fj2SYRqMUxE6Beue7qcF5qNpvPeU2hPcO34pQVStHfcvS3PPM3T3/L0d9n1y6XcX/+4Pka+rsvmJL6d9OEx39G3M13ztHfOdTQX2Bep6UvAD/iBnH8FNQ=
   </data>
  </layer>
  <objectgroup name="Collisions">
@@ -78,37 +78,40 @@
   <object id="34" x="2624" y="384">
    <polyline points="0,0 0,32 32,32 0,0"/>
   </object>
+  <object id="42" x="4224" y="384" width="64" height="96"/>
+  <object id="43" x="4288" y="320" width="256" height="160"/>
+  <object id="44" x="4544" y="352" width="288" height="128"/>
+  <object id="45" x="4832" y="384" width="544" height="96"/>
+  <object id="46" x="5376" y="416" width="864" height="64"/>
+  <object id="47" x="6240" y="384" width="64" height="96"/>
+  <object id="48" x="6304" y="352" width="320" height="128"/>
+  <object id="49" x="6624" y="384" width="64" height="96"/>
+  <object id="50" x="6688" y="416" width="160" height="64"/>
+  <object id="51" x="6848" y="384" width="128" height="96"/>
+  <object id="52" x="6976" y="352" width="64" height="128"/>
+  <object id="53" x="7040" y="320" width="224" height="160"/>
+  <object id="54" x="7264" y="320" width="160" height="160"/>
+  <object id="55" x="7424" y="352" width="256" height="128"/>
+  <object id="56" x="5568" y="256" width="288" height="32"/>
+  <object id="57" x="5600" y="224" width="224" height="32"/>
+  <object id="58" x="5632" y="192" width="160" height="32"/>
  </objectgroup>
- <objectgroup name="Entities">
-  <object id="35" x="256" y="224" width="32" height="32">
-   <properties>
-    <property name="lvl" type="int" value="1"/>
-   </properties>
-  </object>
-  <object id="36" x="1920" y="352" width="32" height="32">
-   <properties>
-    <property name="lvl" type="int" value="1"/>
-   </properties>
-  </object>
-  <object id="37" x="2752" y="384" width="32" height="32">
-   <properties>
-    <property name="lvl" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="38" x="3264" y="384" width="32" height="32">
-   <properties>
-    <property name="lvl" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="39" x="3744" y="384" width="32" height="32">
-   <properties>
-    <property name="lvl" type="int" value="3"/>
-   </properties>
-  </object>
-  <object id="40" x="96" y="384" width="32" height="32">
-   <properties>
-    <property name="Type" value="Player"/>
-   </properties>
-  </object>
+ <objectgroup name="spawn">
+  <object id="59" x="192" y="224" width="192" height="32"/>
+  <object id="74" x="448" y="288" width="160"/>
+  <object id="75" x="832" y="320" width="64" height="32"/>
+  <object id="76" x="1696" y="384" width="512" height="32"/>
+  <object id="77" x="1504" y="352" width="128" height="32"/>
+  <object id="78" x="2368" y="320" width="128" height="32"/>
+  <object id="79" x="2656" y="384" width="1504" height="32"/>
+  <object id="80" x="4320" y="288" width="192" height="32"/>
+  <object id="81" x="4608" y="320" width="192" height="32"/>
+  <object id="82" x="4896" y="352" width="416" height="32"/>
+  <object id="83" x="5440" y="384" width="768" height="32"/>
+  <object id="84" x="6368" y="320" width="224" height="32"/>
+  <object id="85" x="7072" y="288" width="320" height="32"/>
+  <object id="86" x="6720" y="384" width="96" height="32"/>
+  <object id="87" x="7488" y="320" width="160" height="32"/>
+  <object id="88" x="6528" y="0" width="1024" height="192"/>
  </objectgroup>
 </map>

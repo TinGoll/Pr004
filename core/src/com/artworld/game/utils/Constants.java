@@ -17,4 +17,5 @@ public class Constants {
     public static final float FACTOREXP = 2.8f;
     public static final float MAXLVL = 10f;
     public static final float BASICEXP = 60f;
+    public static float GAMELVL = 1;
 }

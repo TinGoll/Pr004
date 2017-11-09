@@ -17,12 +17,12 @@ public enum Creature {
 
     //region Существа
     BUNNY("bunny", "кролик", 64, 64, 1, 10, Bunny1.class), // Существо для игрока.
-    OWL("bunny", "сова", 64, 64, 10, 10, Bunny1.class),
-    BULL("bunny", "бык", 64, 64, 11, 10, Bunny1.class),
-    FOX("bunny", "лиса", 64, 64, 12, 10, Bunny1.class),
-    PORCUPINE("bunny","Дикобраз", 64, 64, 13, 10, Bunny1.class),
-    SKUNK("bunny", "скунс",  64, 64, 14, 10, Bunny1.class),
-    WOLF("bunny", "волк", 64, 64, 14, 10, Bunny1.class);
+    OWL("owl", "сова", 64, 64, 10, 10, Bunny1.class),
+    BULL("bull", "бык", 64, 64, 11, 10, Bunny1.class),
+    FOX("fox", "лиса", 64, 64, 12, 10, Bunny1.class),
+    PORCUPINE("porcupine","Дикобраз", 64, 64, 13, 10, Bunny1.class),
+    SKUNK("skunk", "скунс",  64, 64, 14, 10, Bunny1.class),
+    WOLF("wolf", "волк", 64, 64, 15, 10, Bunny1.class);
     //endregion
     //region Основные переменные существ
     private String textureRegion;
